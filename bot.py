@@ -8,9 +8,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Cont
 # Constants
 with open("token.txt", "r") as file:
     BOT_TOKEN = file.read().strip()
-#BOT_TOKEN = '8175135684:AAF74_3NpIEyjc2urQk4Of4rxWFHdU8PRNA'  # Replace with your bot token
-DATABASE_PATH = 'database/agents.db'
-AGENTS_DIR = 'agents'
+    DATABASE_PATH = 'database/agents.db'
+    AGENTS_DIR = 'agents'
 
 # Ensure agents directory exists
 os.makedirs(AGENTS_DIR, exist_ok=True)
